@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/primary_color_dark</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/primary_color_accent</item>
+    </style>
+
+    <!-- change color Popup -->
+    <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light" >
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- the theme applied to the application or activity -->
+    <style name="ActionBarTheme"  parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:background">@color/primary_color</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+    </style>
+
+    <!-- ActionBar title text -->
+    <style name="MyActionBarTitleText"    parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- ActionBar tabs text styles -->
+    <style name="MyActionBarTabText"    parent="Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+</resources>

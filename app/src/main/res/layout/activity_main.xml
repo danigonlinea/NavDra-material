@@ -1,0 +1,64 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!-- Main layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"/>
+
+            <FrameLayout
+                android:id="@+id/frame_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+        <!-- Nav drawer -->
+        <LinearLayout
+            android:id="@+id/location_drawer_image_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/abc_action_bar_default_height_material"
+            android:orientation="vertical"
+            android:layout_gravity="start"
+            android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:maxWidth="@dimen/nav_drawer_max_width"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/conil_spain"
+                    android:contentDescription="@string/nav_drawer_image_description">
+                </ImageView>
+
+                <ListView android:id="@+id/left_drawer"
+                    android:layout_width="match_parent"
+                    android:maxWidth="@dimen/nav_drawer_max_width"
+                    android:layout_height="match_parent"
+                    android:choiceMode="singleChoice"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="10dp"
+                    android:background="@color/white"/>
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

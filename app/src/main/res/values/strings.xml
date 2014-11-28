@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NavDra-material</string>
+    <string name="app_version_code">0.1</string>
+    <string name="app_version_name">1</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="nav_drawer_image_description">Conil de la Frontera</string>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Option 1</item>
+        <item >Option 2</item>
+        <item >Option 3</item>
+        <item >Option 4</item>
+        <item >Option 5</item>
+
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+    </array>
+
+</resources>
